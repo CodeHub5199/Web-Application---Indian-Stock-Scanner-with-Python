@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+from matplotlib import pyplot as plt
 from nsepy import get_history
 from nsepy.history import get_price_list
 from datetime import date, timedelta
