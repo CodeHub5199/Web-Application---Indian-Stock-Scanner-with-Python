@@ -4,4 +4,4 @@ numpy==1.22.2
 matplotlib==3.5.1
 nsepy==0.8
 pynse==0.1.5
-TA-Lib @ file:///C:/Users/Atharv/TA_Lib-0.4.24-cp310-cp310-win_amd64.whl
+
