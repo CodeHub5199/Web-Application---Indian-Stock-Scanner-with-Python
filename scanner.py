@@ -6,7 +6,7 @@ from nsepy import get_history
 from nsepy.history import get_price_list
 from datetime import date, timedelta
 import time
-import talib as ta
+##import talib as ta
 from pynse import *
 nse = Nse()
 
@@ -483,8 +483,8 @@ if __name__ == '__main__':
                     stock_ma = get_history(i,start_ma,final_ma)
                     stock_ma = stock_ma.drop(['Series','Prev Close','VWAP','Last','Turnover','Trades',
                                         'Deliverable Volume','%Deliverble','Open','High','Low','Volume'],axis=1)
-                    ma200 = ta.MA(stock_ma.Close,200)
-                    ma50 = ta.MA(stock_ma.Close,50)
+                    ma200 = stock_ma['Close'].rolling(200).mean()
+                    ma50 = stock_ma['Close'].rolling(50).mean()
                     stock_ma['MA_50'] = ma50
                     stock_ma['MA_200'] = ma200
                     stock_ma = stock_ma.dropna().tail(1)
