@@ -28,8 +28,8 @@ input3 = args.arg3
 def greaterNo(input1, input2, input3):
     inputList = [input1, input2, input3]
     flist = sorted(inputList)
-    print(flist[-1])
-    return flist[-1]
+    # print(flist[-1])
+    return f'Greater number between {input1}, {input2} and {input3} is {flist[-1]}'
 
 greaterNo(input1, input2, input3)
 
