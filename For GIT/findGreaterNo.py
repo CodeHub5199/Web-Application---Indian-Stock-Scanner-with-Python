@@ -31,6 +31,6 @@ def greaterNo(input1, input2, input3):
     # print(flist[-1])
     return f'Greater number between {input1}, {input2} and {input3} is {flist[-1]}'
 
-greaterNo(input1, input2, input3)
+print(greaterNo(input1, input2, input3))
 
 
